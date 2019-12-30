@@ -1,7 +1,8 @@
 # config.yml
 
 backend:
-  name: git-gateway
+  name: github
+  repo: luthfi070/personal-blog
   branch: master # Branch to update (optional; defaults to master)
   identity_url: "https://genorie.netlify.com/.netlify/identity"
   gateway_url: "https://genorie.netlify.com/.netlify/git"
