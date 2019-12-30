@@ -8,6 +8,7 @@ layout: default
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     {% include navigation.html %}
@@ -17,14 +18,7 @@ layout: default
     sidebar content
   </div>
 {% endif %}
-<h1>{{ "Post Terbaru" | | capitalize }}</h1>
-<form id='google-form' method='post' action='https://script.google.com/macros/s/AKfycbyVS-FMaTegLw0tYrr00ZhOdwfHD4EYP6vwJSpdwGMywBkir9Y/exec'>
-  <div>Name:</div>
-  <input type='text' name='Name'>
-  <div>Email:</div>
-  <input type='text' name='Email'>
-  <input type='submit' value='Submit'>
-</form>
+<h1>{{ "Post Terbaru" || capitalize }}</h1>
   </body>
 </html>
 <script>

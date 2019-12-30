@@ -6,7 +6,7 @@ backend:
   identity_url: "https://genorie.netlify.com/.netlify/identity"
   gateway_url: "https://genorie.netlify.com/.netlify/git"
   squash_merges: true
-media_folder: 'assets/uploads'
+media_folder: '/images'
 site_url: https://genorie.netlify.com
 collections:
   - name: 'blog'
@@ -14,8 +14,6 @@ collections:
     folder: '_posts/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: false
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
