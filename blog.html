@@ -2,8 +2,21 @@
 layout: default
 title: Blog
 ---
-<h1>Post Terbaru</h1>
-
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <style>
+    body{
+        background-color: white;
+        font-family: 'Raleway', sans-serif;
+        color:black;
+      }
+    </style>
+  </head>
+  {% include navigation.html %}
+<center>
+  <h1>Post</h1>
+</center>
 <ul>
   {% for post in site.posts %}
     <li>
@@ -12,3 +25,4 @@ title: Blog
     </li>
   {% endfor %}
 </ul>
+</html>

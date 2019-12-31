@@ -1,11 +1,9 @@
+---
+title: Home
+my_number: 5
+layout: default
+---
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <body>
-    <!doctype html>
 <html>
   <head>
     <style>
@@ -31,38 +29,13 @@ body{
 }
     </style>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>{{ page.title }}</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   </head>
   <body>
     <center>  
-    <style>
-#navbar {
-  overflow: hidden;
-  background-color: #333;
-  margin-right: 14px;
-  margin-left: 14px;
-  margin-top: 14px;
-  border-radius: 15px;
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-</style>
-<div id="navbar">
-    <a href="/">home</a> 
-    <a href="/about.html">about</a> 
-    <a href="/blog.html">blog</a> 
-    <a href="admin/index.html">cms</a> 
-</div>
+    {% include navigation.html %}
     <br><br>
     <h1>About Me</h1>
 <h2>My name is Luthfi Fitra M!</h2>
@@ -100,5 +73,3 @@ body{
     });
   }
 </script>
-  </body>
-</html>

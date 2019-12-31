@@ -8,21 +8,56 @@
     <!doctype html>
 <html>
   <head>
+    <style>
+      body{
+        background-color: white;
+        font-family: 'Raleway', sans-serif;
+        color:black;
+      }
+    </style>
     <meta charset="utf-8">
     <title>Home</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav>
-    <a href="/">home</a>
-    <a href="/about.html">about</a>
-    <a href="/blog.html">blog</a>
-    <a href="admin/index.html">cms</a>
-</nav>
-    <h1>Hellas!</h1>
-    
-<h1>Post terbaru</h1>
+    <center>  
+    <style>
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  margin-right: 14px;
+  margin-left: 14px;
+  margin-top: 14px;
+  border-radius: 15px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+</style>
+<div id="navbar">
+    <a href="/">home</a> 
+    <a href="/about.html">about</a> 
+    <a href="/blog.html">blog</a> 
+    <a href="admin/index.html">cms</a> 
+</div>
+    <br><br><br><br>
+    <h1>Hello World!</h1>
+  </div>
+<h2>Welcome to my personal blog</h2>
+<h2>You can check the about page for more information about me or about this blog!</h2>
+<h2>Thanks!</h2>
+</center>
   </body>
+
+
 </html>
 <script>
   if (window.netlifyIdentity) {
