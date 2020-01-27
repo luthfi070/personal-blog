@@ -11,18 +11,26 @@ title: Blog
         font-family: 'Raleway', sans-serif;
         color:black;
       }
+    a{
+      color: black;
+      text-decoration: none;
+    }
+    .card {
+  max-width: 90%;
+  margin: auto;
+}
     </style>
   </head>
   {% include navigation.html %}
 <center>
   <h1>Post</h1>
 </center>
-<ul>
+  
   {% for post in site.posts %}
-    <li>
+  <div class="card">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       <p>{{ post.excerpt }}</p>
-    </li>
+    </div>
   {% endfor %}
-</ul>
+
 </html>
