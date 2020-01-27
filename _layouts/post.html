@@ -1,7 +1,25 @@
 ---
 layout: default
 ---
+<style>
+.about{
+    text-align: justify ;
+    padding: 10px;
+    margin-left: 15%;
+    width: 600px;
+    height: 200px;
+}
+body{
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    color:black; 
+}
+</style>
+<body>
+{% include navigation.html %}
+<div class="about">   
 <h1>{{ page.title }}</h1>
 <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-
 {{ content }}
+</div>
+</body>
